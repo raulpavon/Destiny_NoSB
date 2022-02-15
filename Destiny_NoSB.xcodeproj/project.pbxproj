@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		04A6582327BC2BB2006F6640 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6582227BC2BB2006F6640 /* AppDelegate.swift */; };
-		04A6582527BC2BB2006F6640 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6582427BC2BB2006F6640 /* SceneDelegate.swift */; };
-		04A6582727BC2BB2006F6640 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6582627BC2BB2006F6640 /* ViewController.swift */; };
-		04A6582A27BC2BB2006F6640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A6582827BC2BB2006F6640 /* Main.storyboard */; };
 		04A6582C27BC2BB4006F6640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04A6582B27BC2BB4006F6640 /* Assets.xcassets */; };
 		04A6582F27BC2BB4006F6640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04A6582D27BC2BB4006F6640 /* LaunchScreen.storyboard */; };
+		04A6583B27BC2C65006F6640 /* DestinyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6583A27BC2C65006F6640 /* DestinyCoordinator.swift */; };
+		04A6583D27BC2C88006F6640 /* DestinyFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6583C27BC2C88006F6640 /* DestinyFactory.swift */; };
+		04A6584027BC2CF9006F6640 /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6583F27BC2CF9006F6640 /* Story.swift */; };
+		04A6584227BC2D07006F6640 /* StoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6584127BC2D07006F6640 /* StoryManager.swift */; };
+		04A6584527BC2D5C006F6640 /* DestinyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6584427BC2D5C006F6640 /* DestinyUIView.swift */; };
+		04A6584727BC2D6F006F6640 /* DestinyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6584627BC2D6F006F6640 /* DestinyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04A6581F27BC2BB2006F6640 /* Destiny_NoSB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Destiny_NoSB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04A6582227BC2BB2006F6640 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04A6582427BC2BB2006F6640 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04A6582627BC2BB2006F6640 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		04A6582927BC2BB2006F6640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04A6582B27BC2BB4006F6640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04A6582E27BC2BB4006F6640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04A6583027BC2BB4006F6640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04A6583A27BC2C65006F6640 /* DestinyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyCoordinator.swift; sourceTree = "<group>"; };
+		04A6583C27BC2C88006F6640 /* DestinyFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyFactory.swift; sourceTree = "<group>"; };
+		04A6583F27BC2CF9006F6640 /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		04A6584127BC2D07006F6640 /* StoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryManager.swift; sourceTree = "<group>"; };
+		04A6584427BC2D5C006F6640 /* DestinyUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyUIView.swift; sourceTree = "<group>"; };
+		04A6584627BC2D6F006F6640 /* DestinyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,50 @@
 		04A6582127BC2BB2006F6640 /* Destiny_NoSB */ = {
 			isa = PBXGroup;
 			children = (
+				04A6583927BC2C45006F6640 /* View */,
+				04A6583827BC2C3A006F6640 /* Model */,
+				04A6583727BC2C20006F6640 /* Factory */,
+				04A6583627BC2C16006F6640 /* Coordinator */,
 				04A6582227BC2BB2006F6640 /* AppDelegate.swift */,
-				04A6582427BC2BB2006F6640 /* SceneDelegate.swift */,
-				04A6582627BC2BB2006F6640 /* ViewController.swift */,
-				04A6582827BC2BB2006F6640 /* Main.storyboard */,
 				04A6582B27BC2BB4006F6640 /* Assets.xcassets */,
-				04A6582D27BC2BB4006F6640 /* LaunchScreen.storyboard */,
 				04A6583027BC2BB4006F6640 /* Info.plist */,
 			);
 			path = Destiny_NoSB;
+			sourceTree = "<group>";
+		};
+		04A6583627BC2C16006F6640 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				04A6583A27BC2C65006F6640 /* DestinyCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		04A6583727BC2C20006F6640 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				04A6583C27BC2C88006F6640 /* DestinyFactory.swift */,
+			);
+			path = Factory;
+			sourceTree = "<group>";
+		};
+		04A6583827BC2C3A006F6640 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04A6583F27BC2CF9006F6640 /* Story.swift */,
+				04A6584127BC2D07006F6640 /* StoryManager.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04A6583927BC2C45006F6640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04A6582D27BC2BB4006F6640 /* LaunchScreen.storyboard */,
+				04A6584427BC2D5C006F6640 /* DestinyUIView.swift */,
+				04A6584627BC2D6F006F6640 /* DestinyViewController.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +168,6 @@
 			files = (
 				04A6582F27BC2BB4006F6640 /* LaunchScreen.storyboard in Resources */,
 				04A6582C27BC2BB4006F6640 /* Assets.xcassets in Resources */,
-				04A6582A27BC2BB2006F6640 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +178,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04A6582727BC2BB2006F6640 /* ViewController.swift in Sources */,
 				04A6582327BC2BB2006F6640 /* AppDelegate.swift in Sources */,
-				04A6582527BC2BB2006F6640 /* SceneDelegate.swift in Sources */,
+				04A6584527BC2D5C006F6640 /* DestinyUIView.swift in Sources */,
+				04A6583D27BC2C88006F6640 /* DestinyFactory.swift in Sources */,
+				04A6583B27BC2C65006F6640 /* DestinyCoordinator.swift in Sources */,
+				04A6584227BC2D07006F6640 /* StoryManager.swift in Sources */,
+				04A6584727BC2D6F006F6640 /* DestinyViewController.swift in Sources */,
+				04A6584027BC2CF9006F6640 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04A6582827BC2BB2006F6640 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04A6582927BC2BB2006F6640 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04A6582D27BC2BB4006F6640 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -294,7 +330,6 @@
 				INFOPLIST_FILE = Destiny_NoSB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -322,7 +357,6 @@
 				INFOPLIST_FILE = Destiny_NoSB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
