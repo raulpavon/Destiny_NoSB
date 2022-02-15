@@ -9,7 +9,18 @@ import UIKit
 
 class DestinyUIView: UIView {
     enum DestinyUIViewConstraints {
-        
+        enum LbStory {
+            static let fontSize: CGFloat = 25
+        }
+        enum Button {
+            static let fontSize: CGFloat = 23
+            static let height: CGFloat = 100
+        }
+        enum StackContainer {
+            static let bottom: CGFloat = -15
+            static let leading: CGFloat = 20
+            static let trailing: CGFloat = -20
+        }
     }
     
     private lazy var mainContainer: UIView = {
@@ -20,7 +31,7 @@ class DestinyUIView: UIView {
     }()
     
     private let imgBackground: UIImageView = {
-        let image = UIImageView(image: UIImage(named: "background"))
+        let image = UIImageView(image: UIImage(named: GlobalConstants.Images.background))
         image.contentMode = .scaleAspectFill
         image.translatesAutoresizingMaskIntoConstraints = false
         return image
@@ -40,7 +51,7 @@ class DestinyUIView: UIView {
     private let lbStory: UILabel = {
         let label = UILabel(frame: .zero)
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 25)
+        label.font = .systemFont(ofSize: DestinyUIViewConstraints.LbStory.fontSize)
         label.textColor = .white
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
@@ -51,8 +62,8 @@ class DestinyUIView: UIView {
         let button = UIButton(frame: .zero)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(.white, for: .normal)
-        button.setBackgroundImage(UIImage(named: "choice1Background"), for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 23)
+        button.setBackgroundImage(UIImage(named: GlobalConstants.Images.btChoice1Background), for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: DestinyUIViewConstraints.Button.fontSize)
         button.titleLabel?.lineBreakMode = .byWordWrapping
         button.titleLabel?.textAlignment = .center
         return button
@@ -62,8 +73,8 @@ class DestinyUIView: UIView {
         let button = UIButton(frame: .zero)
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitleColor(.white, for: .normal)
-        button.setBackgroundImage(UIImage(named: "choice2Background"), for: .normal)
-        button.titleLabel?.font = .systemFont(ofSize: 23)
+        button.setBackgroundImage(UIImage(named: GlobalConstants.Images.btChoice2Background), for: .normal)
+        button.titleLabel?.font = .systemFont(ofSize: DestinyUIViewConstraints.Button.fontSize)
         button.titleLabel?.lineBreakMode = .byWordWrapping
         button.titleLabel?.textAlignment = .center
         return button
@@ -105,13 +116,13 @@ class DestinyUIView: UIView {
             imgBackground.bottomAnchor.constraint(equalTo: mainContainer.bottomAnchor),
             
             stackContainer.topAnchor.constraint(equalTo: mainContainer.safeAreaLayoutGuide.topAnchor),
-            stackContainer.bottomAnchor.constraint(equalTo: mainContainer.safeAreaLayoutGuide.bottomAnchor, constant: -15),
-            stackContainer.leadingAnchor.constraint(equalTo: mainContainer.leadingAnchor, constant: 20),
-            stackContainer.trailingAnchor.constraint(equalTo: mainContainer.trailingAnchor, constant: -20),
+            stackContainer.bottomAnchor.constraint(equalTo: mainContainer.safeAreaLayoutGuide.bottomAnchor, constant: DestinyUIViewConstraints.StackContainer.bottom),
+            stackContainer.leadingAnchor.constraint(equalTo: mainContainer.leadingAnchor, constant: DestinyUIViewConstraints.StackContainer.leading),
+            stackContainer.trailingAnchor.constraint(equalTo: mainContainer.trailingAnchor, constant: DestinyUIViewConstraints.StackContainer.trailing),
             
-            btChoice1.heightAnchor.constraint(equalToConstant: 100),
+            btChoice1.heightAnchor.constraint(equalToConstant: DestinyUIViewConstraints.Button.height),
             
-            btChoice2.heightAnchor.constraint(equalToConstant: 100),
+            btChoice2.heightAnchor.constraint(equalToConstant: DestinyUIViewConstraints.Button.height),
         ])
     }
     

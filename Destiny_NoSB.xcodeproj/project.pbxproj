@@ -16,6 +16,7 @@
 		04A6584227BC2D07006F6640 /* StoryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6584127BC2D07006F6640 /* StoryManager.swift */; };
 		04A6584527BC2D5C006F6640 /* DestinyUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6584427BC2D5C006F6640 /* DestinyUIView.swift */; };
 		04A6584727BC2D6F006F6640 /* DestinyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6584627BC2D6F006F6640 /* DestinyViewController.swift */; };
+		04A6584C27BC3AF8006F6640 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6584B27BC3AF8006F6640 /* GlobalConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		04A6584127BC2D07006F6640 /* StoryManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryManager.swift; sourceTree = "<group>"; };
 		04A6584427BC2D5C006F6640 /* DestinyUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyUIView.swift; sourceTree = "<group>"; };
 		04A6584627BC2D6F006F6640 /* DestinyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinyViewController.swift; sourceTree = "<group>"; };
+		04A6584B27BC3AF8006F6640 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		04A6582127BC2BB2006F6640 /* Destiny_NoSB */ = {
 			isa = PBXGroup;
 			children = (
+				04A6584A27BC3ABE006F6640 /* Utils */,
 				04A6583927BC2C45006F6640 /* View */,
 				04A6583827BC2C3A006F6640 /* Model */,
 				04A6583727BC2C20006F6640 /* Factory */,
@@ -106,6 +109,14 @@
 				04A6584627BC2D6F006F6640 /* DestinyViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		04A6584A27BC3ABE006F6640 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				04A6584B27BC3AF8006F6640 /* GlobalConstants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,6 +195,7 @@
 				04A6583B27BC2C65006F6640 /* DestinyCoordinator.swift in Sources */,
 				04A6584227BC2D07006F6640 /* StoryManager.swift in Sources */,
 				04A6584727BC2D6F006F6640 /* DestinyViewController.swift in Sources */,
+				04A6584C27BC3AF8006F6640 /* GlobalConstants.swift in Sources */,
 				04A6584027BC2CF9006F6640 /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
